@@ -1,18 +1,18 @@
 # MOTD Service Status Monitor
 
 A lightweight **service status monitor** written in pure Bash.  
-It displays the status of configured programs and Docker containers in a **colorized, column-wrapped MOTD-style output** with **no external dependencies**.
+It is intended to be added to the update-motd script set, to give you a quick view of critical services when logging in to a server.  To ensure safety, this has minimal **external dependencies**.
 
 ---
 
 ## Features
 
-- ✅ **Pure Bash** – no Python, Perl, or jq required  
-- ✅ **Configurable per-host** – picks config file by FQDN, short hostname, or default  
-- ✅ **Checks programs** – runs commands and matches optional expected output  
-- ✅ **Checks Docker containers** – inspects container state if Docker is installed  
-- ✅ **Colorized output** – green check, red cross, yellow question mark  
-- ✅ **Column layout with auto-wrapping** – adapts to your terminal width  
+- **Pure Bash** – no Python, Perl, or jq required  
+- **Configurable per-host** – picks config file by FQDN, short hostname, or default  
+- **Checks programs** – runs commands and matches optional expected output  
+- **Checks Docker containers** – inspects container state if Docker is installed  
+- **Colorized output** – green check, red cross, yellow question mark  
+- **Column layout with auto-wrapping** – adapts to your terminal width  
 
 ---
 
