@@ -5,17 +5,6 @@ It is intended to be added to the update-motd script set, to give you a quick vi
 
 ---
 
-## Features
-
-- **Pure Bash** – no Python, Perl, or jq required  
-- **Configurable per-host** – picks config file by FQDN, short hostname, or default  
-- **Checks programs** – runs commands and matches optional expected output  
-- **Checks Docker containers** – inspects container state if Docker is installed  
-- **Colorized output** – green check, red cross, yellow question mark  
-- **Column layout with auto-wrapping** – adapts to your terminal width  
-
----
-
 ## Example Output
 
 ```
