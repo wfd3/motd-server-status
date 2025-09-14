@@ -122,7 +122,7 @@ main() {
 
     # Each cell is: 1(symbol) + 1(space) + NAME_WIDTH visible chars
     local CELL_WIDTH=$((1 + 1 + NAME_WIDTH))
-    local cols_per_line=$(( (term_cols + GAP) / (CELL_WIDTH + GAP) ))
+    local cols_per_line=$(( (term_cols - CELL_WIDTH) / (CELL_WIDTH + GAP) + 1 ))
     (( cols_per_line < 1 )) && cols_per_line=1
 
     local col=0
